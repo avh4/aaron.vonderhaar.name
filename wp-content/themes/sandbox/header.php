@@ -22,12 +22,12 @@
 		<div id="blog-description"><?php bloginfo('description') ?></div>
 		<div id="follow-links">
 			<p>Follow me on:</p>
-			<img height="16" width="16" alt="Twitter" src="<?php bloginfo('template_url') ?>/twitter.png"/>
-			<img height="16" width="16" alt="Delicious" src="<?php bloginfo('template_url') ?>/delicious.png"/>
-			<img height="16" width="16" alt="Flickr" src="<?php bloginfo('template_url') ?>/flickr.png"/> <br/>
-			<img height="16" width="16" alt="Last.fm" src="<?php bloginfo('template_url') ?>/lastfm.png"/>
-			<img height="16" width="16" alt="Tumblr" src="<?php bloginfo('template_url') ?>/tumblr.png"/>
-			<img height="16" width="16" alt="YouTube" src="<?php bloginfo('template_url') ?>/youtube.png"/>
+			<a href="http://twitter.com/avh4"><img height="16" width="16" alt="Twitter" src="<?php bloginfo('template_url') ?>/twitter.png"/></a>
+			<a href="http://del.icio.us/avh4"><img height="16" width="16" alt="Delicious" src="<?php bloginfo('template_url') ?>/delicious.png"/></a>
+			<a href="http://www.flickr.com/photos/avh4/"><img height="16" width="16" alt="Flickr" src="<?php bloginfo('template_url') ?>/flickr.png"/></a> <br/>
+			<a href="http://last.fm/user/avh4"><img height="16" width="16" alt="Last.fm" src="<?php bloginfo('template_url') ?>/lastfm.png"/></a>
+			<a href="http://avh4.tumblr.com"><img height="16" width="16" alt="Tumblr" src="<?php bloginfo('template_url') ?>/tumblr.png"/></a>
+			<a href="http://youtube.com/user/gruen0"><img height="16" width="16" alt="YouTube" src="<?php bloginfo('template_url') ?>/youtube.png"/></a>
 		</div>
 	</div><!--  #header -->
 	
