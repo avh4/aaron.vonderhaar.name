@@ -16,9 +16,21 @@
 <div id="wrapper" class="hfeed">
 
 	<div id="header">
-		<h1 id="blog-title"><span><a href="<?php echo get_option('home') ?>/" title="<?php bloginfo('name') ?>" rel="home"><?php bloginfo('name') ?></a></span></h1>
+		<h1 id="blog-title"><span><a href="<?php echo get_option('home') ?>/" title="<?php bloginfo('name') ?>" rel="home">
+			<img id="logo" src="<?php bloginfo('template_url') ?>/logo.png" height="101" width="101" alt="<?php bloginfo('name') ?>"/>
+		</a></span></h1>
 		<div id="blog-description"><?php bloginfo('description') ?></div>
+		<div id="follow-links">
+			<p>Follow me on:</p>
+			<img height="16" width="16" alt="Twitter" src="<?php bloginfo('template_url') ?>/twitter.png"/>
+			<img height="16" width="16" alt="Delicious" src="<?php bloginfo('template_url') ?>/delicious.png"/>
+			<img height="16" width="16" alt="Flickr" src="<?php bloginfo('template_url') ?>/flickr.png"/> <br/>
+			<img height="16" width="16" alt="Last.fm" src="<?php bloginfo('template_url') ?>/lastfm.png"/>
+			<img height="16" width="16" alt="Tumblr" src="<?php bloginfo('template_url') ?>/tumblr.png"/>
+			<img height="16" width="16" alt="YouTube" src="<?php bloginfo('template_url') ?>/youtube.png"/>
+		</div>
 	</div><!--  #header -->
+	
 
 	<div id="access">
 		<div class="skip-link"><a href="#content" title="<?php _e('Skip navigation to the content', 'sandbox'); ?>"><?php _e('Skip to content', 'sandbox'); ?></a></div>

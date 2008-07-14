@@ -8,11 +8,56 @@ AUTHOR: <a href="http://andy.wordpress.com/">Andy Skelton</a> &amp; <a href="htt
 AUTHOR URI:
 */
 
-/* Two-column with sidebar on left from the /sandbox-layouts/ folder  */
-@import url('sandbox-layouts/2c-l.css');
+/*
+LAYOUT: Two-Column (Right)
+DESCRIPTION: Two-column fluid layout with one sidebars right of content
+*/
+body {
+	background-image: url('left_colors.png');
+	background-color: white;
+	background-repeat: repeat-y;
+	background-position: 68px 0px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 13px;
+	margin-right: 60px;
+}
+div#container {
+	float: left;
+	margin: 0 -200px 0 0;
+	width: 100%;
+	clear: both;
+}
+div#wrapper {
+	margin: 0 0 0 230px;
+}
+div#content {
+	margin: 0 200px 0 0;
+}
+div.sidebar {
+	float: right;
+	overflow: hidden;
+	width: 180px;
+}
+div#secondary	{
+	clear: right;
+}
+div#footer {
+	clear: both;
+	width: 100%;
+}
+
+/* Header */
+div#header{
+	background-image: url('right_colors.png');
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+div#blog-description {display: none;}
+div#access {display: none;}
+img#logo {float:left; margin-right: 10px;}
+div#follow-links img {margin: 5px;}
 
 /* Just some example content */
-div#header{text-align:center;margin-bottom:2em;}
 div#access div.skip-link{position:absolute;top:1em;right:1em;}
 div#menu{font-size:0.9em;height:1.5em;padding-top:0.3em;background:#eee;width:100%;}
 div#menu ul a{font-weight:700;text-decoration:none;}
