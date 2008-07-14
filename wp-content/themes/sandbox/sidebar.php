@@ -2,6 +2,7 @@
 		<ul class="xoxo">
 <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar(1) ) : // begin primary sidebar widgets ?>
 
+<!--
 			<li id="pages">
 				<h3><?php _e('Pages', 'sandbox') ?></h3>
 				<ul>
@@ -16,7 +17,7 @@
 
 				</ul>
 			</li>
-
+-->
 			<li id="archives">
 				<h3><?php _e('Archives', 'sandbox') ?></h3>
 				<ul>
