@@ -1,3 +1,6 @@
+<head>
+  <link rel="stylesheet" href="bower_components/vex/css/vex.css" />
+  <link rel="stylesheet" href="bower_components/vex/css/vex-theme-wireframe.css" />
 <style>
 .card {
 /*  border-radius: @card-border-radius;*/
@@ -9,7 +12,12 @@
 .item {
   width: 32%;
 }
+.vex-content {
+  width: 80% !important;
+}
 </style>
+</head>
+<body>
 
 <div id="container" class="js-masonry"
   data-masonry-options='{ "columnWidth": ".grid-sizer", "itemSelector": ".item" }'>
@@ -27,9 +35,25 @@
     </div>
   </div>
   <div class="item">
+    <h3><a href="https://github.com/avh4/magnum-di">Magnum, D.I.</a></h3>
+    <p>Dead-simple <a href="http://www.martinfowler.com/articles/injection.html">dependency injection</a> framework supporting heirarchical injection</p>
+  </div>
+  <div class="item">
     <div class="card">
-      <h3>Everywhere at once</h3>
+      <script>
+      function showEverywhereAtOnce() {
+        vex.open({
+          content: "<p>Sometimes I want to be everywhere at once.  Like snow.  I want to fall into every tiny crevice, and be a blinding haze of whiteness and melt my way deep into the earth.  I want to pile in people's gutters and be tracked into their dirty kitchens and across their carpets.  I want to fill everyone's vision.  I want the whole world be distracted by me.</p><p>If I could do this then I would never need to be angry.  When your long, confident legs caught the attention of one man and then another and then every man from here to your car, I could whirl down from the sky and swirl and frenzy the air, making them pull their coats and hurry home.  When your gorgeous smile said hello to the clerk and the clerk would fall instantly in love with you, I could come from above and howl and darken the sky, and the clerk would look to you for comfort, and know that he was just a child in your eyes.</p><p>If I were the snow I could cover your house every night.  You would look out the window and remember the peacefulness of a childhood Christmas.  You would make yourself a giant mug of hot chocolate and wrap yourself with your warmest blanket in the corner of your love seat.  Maybe you would watch a heartwarming Christmas special or maybe you would sit and stare into the fire and dream.  You would feel independent and happy and strong, knowing that you'd never have to settle for a man less than perfect for you. </p><p>And when you found your perfect man, the one to love and respect and admire and bolster you, I could cover the earth.  I would fall in every corner and creep under every rock, spreading myself as wide as the globe and visiting all the untouched places.  I would smile at your joy, and my snowflakes, spread so thin, would melt for you.  I would embrace all living things and wet them with my tears.  And you would walk hand-in-hand.  As salt and rock and plant, sorrow and joy and an ocean of loneliness would mix under your feet, and prepare the earth for new beginnings.</p>",
+        });        
+      }
+      </script>
+      <h3><a href="javascript:void(0)" onclick="showEverywhereAtOnce()">Everywhere at once</a></h3>
+      <p>Sometimes I want to be everywhere at once...</p>
     </div>
   </div>
 </div>
-<script src="/bower_components/masonry/dist/masonry.pkgd.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/masonry/dist/masonry.pkgd.min.js"></script>
+<script src="bower_components/vex/js/vex.combined.min.js"></script>
+<script>vex.defaultOptions.className = 'vex-theme-wireframe';</script>
+</body>
