@@ -1,6 +1,7 @@
 <head>
   <link rel="stylesheet" href="bower_components/vex/css/vex.css" />
   <link rel="stylesheet" href="bower_components/vex/css/vex-theme-wireframe.css" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
 <style>
 .card {
 /*  border-radius: @card-border-radius;*/
@@ -11,47 +12,104 @@
 }
 .item {
   width: 32%;
+  max-width: 300px;
 }
 .vex-content {
   width: 80% !important;
+  max-width: 600px !important;
 }
+.vex-overlay {
+  background: rgba(245, 245, 245, 0.9) !important;
+}
+
 .item img {
   width: 100%;
 }
+
+.card {
+  margin: 10px;
+  background: #eee;
+  border-radius: 5px;
+  padding-bottom: 1px;  
+}
+
+.card h3 {
+  padding: 5px;
+  margin: 0;
+}
+
+.card p {
+  margin: 10px;
+}
+
+.pattern1 {
+  background: url('i/small_steps.png');
+}
+
+.fill-down {
+  padding-bottom: 99999px;
+  margin-bottom: -99999px;
+}
+
+.row {
+  overflow: hidden;
+}
+
 </style>
 </head>
 <body>
 
+<div class="container">
+  
+  <div class="row">
+
+<div class="col-sm-4 col-sm-push-8 pattern1 fill-down">
+<img src="i/av.jpg" width="100%" style="float:right"/>
+</div>
+
+<div class="col-sm-8 col-sm-pull-4">
+<h1>Aaron VonderHaar</h1>
+<div>Cutting-edge Software Developer, User Experience Advocate, Optimist and Educator</div>
+<br/>
+<p>
+  Aaron is currently a software developer and engineering manager at <a href="http://web.archive.org/web/20120118073239/http://pivotallabs.com/what/overview">Pivotal Labs</a>.
+  <!-- <a href="https://soundcloud.com/avh4/sets/best-i-can-do">singing</a> -->
+</p>
+
+<h2>Projects</h2>
 <div id="container" class="js-masonry"
   data-masonry-options='{ "columnWidth": ".grid-sizer", "itemSelector": ".item" }'>
-  <div class="grid-sizer" style="width: 32%"></div>
+  <div class="grid-sizer" style="width: 32%; max-width: 300px"></div>
   <div class="item" style="width: 64%">
-    <h1>Aaron VonderHaar</h1>
-    <div>Cutting-edge Software Developer, User Experience Advocate, Optimist and Educator</div>
   </div>
-  <div class="item" style="width: 32%; background: navy">
-    <img src="i/av.jpg" width="100%" />
+  <div class="item" style="width: 32%">
   </div>
   <div class="item">
     <div class="card">
       <h3><a href="http://avh4.github.io/treepie/">Tree Pie</a></h3>
-      <img src="i/treepie.png" />
+      <img src="i/treepie.png" alt="Screenshot of Tree Pie"/>
       <p>Live editor for treepies--a.k.a. multilevel pie chart, sunburst diagram, ring chart, or radial tree</p>
     </div>
   </div>
   <div class="item">
-    <h3><a href="https://github.com/avh4/magnum-di">Magnum, D.I.</a></h3>
-    <p>Dead-simple <a href="http://www.martinfowler.com/articles/injection.html">dependency injection</a> framework supporting heirarchical injection</p>
+    <div class="card">
+      <h3><a href="https://github.com/avh4/magnum-di">Magnum, D.I.</a></h3>
+      <p>Dead-simple <a href="http://www.martinfowler.com/articles/injection.html">dependency injection</a> framework supporting heirarchical injection</p>
+    </div>
   </div>
   <div class="item">
-    <h3><a href="http://interstellar.avh4.net/">Interstellar</a></h3>
-    <img src="i/interstellar.png" width="100%" alt="Interstellar">
-    <p>Colonize the local group over billions of years--a game written in one week</p>
+    <div class="card">
+      <h3><a href="http://interstellar.avh4.net/">Interstellar</a></h3>
+      <img src="i/interstellar.png" alt="Screenshot of Interstellar">
+      <p>Colonize the local group over billions of years--a game/simulation written in one week</p>
+    </div>
   </div>
   <div class="item">
-    <h3><a href="http://ld27.avh4.net/">Unstable Ground</a></h3>
-    <img src="i/unstable_ground.png" width="100%" alt="Unstable Ground">
-    <p>A demolition expert finds herself facing a dark internal struggle as well as a daily light struggle--a game written in 48 hours</p>
+    <div class="card">
+      <h3><a href="http://ld27.avh4.net/">Unstable Ground</a></h3>
+      <img src="i/unstable_ground.png" alt="Screenshot of Unstable Ground">
+      <p>A demolition expert finds herself facing a dark internal struggle as well as a daily light struggle--a game written in 48 hours</p>
+    </div>
   </div>
   <div class="item">
     <div class="card">
@@ -65,6 +123,33 @@
       <h3><a href="javascript:void(0)" onclick="showEverywhereAtOnce()">Everywhere at once</a></h3>
       <p>Sometimes I want to be everywhere at once...</p>
     </div>
+  </div>
+  <div class="item">
+    <div class="card">
+      <h3><a href="http://ixchow.github.io/arrange/">Fragments</a></h3>
+      <img src="i/fragments.png" alt="Screenshot of Fragments">
+      <p>A game of connecting worlds--a collaboration in 72 hours</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="card">
+      <h3>Immortal Fantasy</h3>
+      <img src="i/immortal_fantasy.png" alt="Screenshot of Immortal Fantasy">
+      <p>Procedurally-generated fantasy game</p>
+    </div>
+  </div>
+  <!-- <div class="item">
+    <div class="card">
+      <h3>Immortal Fantasy</h3>
+      <img src="i/immortal_fantasy.png" alt="Screenshot of Immortal Fantasy">
+      <p>Procedurally-generated fantasy game</p>
+    </div>
+  </div> -->
+</div>
+
+<!-- <h2>Friends</h2> -->
+
+</div>
   </div>
 </div>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
